@@ -34,7 +34,7 @@
         <credentialsId>f3dd437d-602f-43f2-a3fc-28ad48283e0b</credentialsId>
       </server>
       <registry plugin="docker-commons@1.9">
-        <credentialsId>edb89ffc-c01b-43ce-a252-31d0331cfe8a</credentialsId>
+        <credentialsId>f94c0537-8855-4b7a-bb2b-601b7b63f77a</credentialsId>
       </registry>
       <repoName>test</repoName>
       <noCache>false</noCache>
