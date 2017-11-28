@@ -10,46 +10,6 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <hudson.model.ParametersDefinitionProperty>
-      <parameterDefinitions>
-        <hudson.model.PasswordParameterDefinition>
-          <name>PASSWORD</name>
-          <description></description>
-          <defaultValue>{AQAAABAAAAAQiZETygfiESNEksQ+K4EHpZZv9DiTCXlsR7YnEOivrqo=}</defaultValue>
-        </hudson.model.PasswordParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>DOCKER_TLS_VERIFY</name>
-          <description></description>
-          <defaultValue>1</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>DOCKER_HOST</name>
-          <description></description>
-          <defaultValue>tcp://demo-ucp.trustedidlabs.com:443</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>DOCKER_CERT_PATH</name>
-          <description></description>
-          <defaultValue>/var/lib/jenkins/workspace/ucp-client-bundle-download</defaultValue>
-        </hudson.model.StringParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-    <EnvInjectJobProperty plugin="envinject@2.1.5">
-      <info>
-        <scriptContent>ls -l
-cp /var/lib/jenkins/ucp-bundle/ca.pem ca
-ls -l</scriptContent>
-        <secureGroovyScript plugin="script-security@1.35">
-          <script></script>
-          <sandbox>false</sandbox>
-        </secureGroovyScript>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-      <on>true</on>
-      <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
-      <keepBuildVariables>true</keepBuildVariables>
-      <overrideBuildParameters>false</overrideBuildParameters>
-    </EnvInjectJobProperty>
     <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
       <triggers/>
     </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
