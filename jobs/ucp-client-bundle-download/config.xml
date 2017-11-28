@@ -26,15 +26,7 @@
       <command># Create an environment variable with the user security token
 curl --verbose -sk -d &quot;{\&quot;username\&quot;:\&quot;admin\&quot;,\&quot;password\&quot;:\&quot;$PASSWORD\&quot;}&quot; https://demo-ucp.trustedidlabs.com/auth/login &gt; auth.json
 
-cat auth.json
-
-# Download the client certificate bundle
-#curl -k -H &quot;Authorization: Bearer $AUTHTOKEN&quot; https://&lt;ucp-ip&gt;/api/clientbundle -o bundle.zip
-
-ls .
-
-#jq --version
-#js &apos;.&apos; auth.json</command>
+cat auth.json</command>
     </hudson.tasks.Shell>
     <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.66">
       <scriptText>import groovy.json.JsonSlurper
